@@ -1,3 +1,5 @@
+name: CI -> Deploy to My website
+on: [push]
 jobs:
     - upload:
           - name: Upload build to hosting environment
