@@ -15,3 +15,15 @@ jobs:
                   # remote_dir: '/home/www/web357/dokim.es/githubactions'
                   delete: 'false'
                   ftp_ssl_allow: 'true'
+                  exclude: '
+                    - **/vendor/**
+                    - **/vendor*/**
+                    - **/node_modules/**
+                    - **/node_modules*/**
+                    - **/resource/css/**
+                    - **/resource/css*/**
+                    - **/resource/js/**
+                    - **/resource/js*/**
+                    - **/.git/**
+                    - **/.git*/**
+                  '
