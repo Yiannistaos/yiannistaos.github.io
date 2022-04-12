@@ -1,9 +1,9 @@
-name: sftp
+name: CI -> Deploy to My website
 on: [push]
 jobs:
-    upload:
-        steps:
-            - uses: Atyn/simple-sftp-action@0.0.2
-            - name: Upload build to hosting environment
-              with:
-                  url: sftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_SERVER }}/
+    - upload:
+          - name: Upload build to hosting environment
+            uses: Atyn/Simple-SFTP
+            with:
+                url: sftp://USERNAME:PASSWORD@example.com/remote-directory
+                local-directory: build-output
