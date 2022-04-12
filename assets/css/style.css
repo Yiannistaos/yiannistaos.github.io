@@ -1,0 +1,10 @@
+* {
+    color: red;
+}
+body {
+    width: 300px;
+    margin: 200px auto;
+}
+.test {
+    color: green;
+}
