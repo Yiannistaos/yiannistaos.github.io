@@ -13,5 +13,5 @@ jobs:
                   password: ${{ secrets.FTP_PASSWORD }}
                   # local_dir: './'
                   # remote_dir: '/home/www/web357/dokim.es/githubactions'
-                  delete: 'false'
-                  tp_ssl_allow: 'true'
+                  delete: 'true'
+                  ftp_ssl_allow: 'true'
