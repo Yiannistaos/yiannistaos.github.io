@@ -3,7 +3,7 @@ on: [push]
 jobs:
     upload:
         steps:
-            - name: Upload build to hosting environment
             - uses: Atyn/simple-sftp-action@0.0.2
+            - name: Upload build to hosting environment
               with:
                   url: sftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_SERVER }}/
