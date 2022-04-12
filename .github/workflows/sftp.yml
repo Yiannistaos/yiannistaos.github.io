@@ -1,8 +1,8 @@
 name: CI -> Deploy to My website
 on: [push]
 jobs:
-    - upload:
-          - name: Upload build to hosting environment
-            uses: Atyn/simple-sftp-action@0.0.2
-            with:
-                url: sftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_SERVER }}/
+    upload:
+        - name: Upload build to hosting environment
+          uses: Atyn/simple-sftp-action@0.0.2
+          with:
+              url: sftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_SERVER }}/
