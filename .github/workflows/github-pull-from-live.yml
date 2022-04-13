@@ -4,5 +4,8 @@ jobs:
     YT-GitHub-Pull:
         runs-on: ubuntu-latest
         steps:
-            - run: git pull
+            # - run: git pull
             - run: echo "🐧 Done, git pulled!"
+            - name: List files in the repository
+              run: |
+                  ls ${{ github.workspace }}
