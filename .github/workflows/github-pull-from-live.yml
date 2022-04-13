@@ -1,0 +1,8 @@
+name: GitHub Pull from Live
+on: [push]
+jobs:
+    YT-GitHub-Pull:
+        runs-on: ubuntu-latest
+        steps:
+            - run: git pull"
+            - run: echo "🐧 Done, git pulled!"
