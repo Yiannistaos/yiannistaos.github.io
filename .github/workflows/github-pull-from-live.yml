@@ -4,5 +4,5 @@ jobs:
     YT-GitHub-Pull:
         runs-on: ubuntu-latest
         steps:
-            - run: git pull"
+            - run: git pull
             - run: echo "🐧 Done, git pulled!"
